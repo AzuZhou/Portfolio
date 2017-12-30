@@ -121,12 +121,12 @@ nav {
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  margin-top: 5px;
+  margin-top: 1vh;
 }
 
 nav li a {
-  color: rgb(255,192,203);
-  font-size: 30px;
+  color: rgb(	255, 204, 204);/* rgb(255,192,203);*/
+  font-size: 1.8vw;
   font-weight: bold; 
   text-transform: uppercase;
 }
@@ -134,10 +134,10 @@ nav li a {
 
 nav li {
   display: flex;
-  border: 1px solid	rgb(255,192,203);
-  padding: 15px 10px 15px 10px;
-  width: 170px;
-  height: 45px;
+  border: 1px solid	rgb(	178, 178, 178);/*rgb(255,192,203);*/
+  padding: .5vw .5vh .5vw .5vh;
+  width: 12vw;
+  height: 5vh;
   align-items: center;
   justify-content: center;
 }
@@ -159,35 +159,34 @@ header {
   flex-direction: column;
   flex-grow: 1;
   width: 100vw;
-  height: 50vh;
-  padding-top: 25px;
-  background-color: white;
+  height: 25vh;
+  padding-top: 5vh;
 }
 
 header h1 {
   text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 130px;
+  font-size: 6vw;
   font-weight: lighter;
   margin-bottom: 15vh;
-  color: rgb(255,228,225);
+  color:rgb(255,228,225);
 }
 
 header a img {
-  margin-top: 10vh;
+  margin-top: 3vh;
   position: relative;
-  height: 30vh;
+  height: 25vh;
   border-radius: 50%;
-  border: 1px solid rgb(255,228,225);
+  /*border: 1px solid rgb(255,228,225);*/
   margin-left: 8vw; 
   margin-right: 8vw;  
 }
 
 #bio {
-  background-image: url('background1.jpg');
-  background-size: 100% 100%;
+  /*background-image: url('background1.jpg');
+  background-size: 100% 100%;*/
   display: flex;
-  height: 120vh;
+  height: 72vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -199,27 +198,29 @@ header a img {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10vh;
   width: 60vw;
-  height: 30vh;
-  padding: 20px;
+  height: 50vh;
+  /*padding: 2px;*/
   flex-direction: column;
-  background: rgba(255,255,255,0.8);
+  /*background: rgba(255,255,255,0.8);*/
 }
 
 .description p {
   text-align: center;
-  height: 30vh;
+  height: 10vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  text-align: center;
+  font-size: 1.3vw;
 }
 
 .description h1 {
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: bold;
-  color: rgb(255,192,203);
+  color: rgb(	255, 204, 204); /*rgb(255,192,203);*/
 }
 
 #contact {
@@ -228,11 +229,8 @@ header a img {
   align-items: center;
   width: 100vw;
   height: 30vh;
-  margin-top: 40px;
-  margin-bottom: 50px;
   flex-direction: column;
-  background: white;
-  opacity: 0.6;
+  height: 100vh;
 }
 
 .social-media {
@@ -241,27 +239,163 @@ header a img {
   justify-content: space-around;
   align-items: center;
   width: 50%;
-  padding-top: 60px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 #contact h1 {
   font-weight: bold;
-  font-size: 40px;
-  color: rgb(255,192,203);
+  font-size: 3vw;
+  color: rgb(	255, 204, 204);
+  padding-top: 10vh;
+}
+
+#contact h2 {
+  font-size: 3vw;
+  color: rgb(	255, 204, 204);
+  padding-top: 10vh;
 }
 
 .social-media img {
-  height: 60px;
+  height: 8vh;
 }
 
 #portfolio {
-  background-color: rgb(255,228,225);
+  background-color: rgb(229, 229, 229);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 200vh;
+  height: 102vh;
 }
+
+#portfolio #project-1 {
+  display: block;
+  /*justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+}
+
+#portfolio #project-1 h2 {
+  font-size: 3vw;
+  margin-bottom: 5vh;
+}
+
+#portfolio #project-1 p {
+ width: 60vw;
+ font-size: 1.5vw;
+ margin-bottom: 3vh;
+}
+
+#portfolio #project-1 img {
+  size: 100% 100%;
+  width: 50vw;
+}
+
+#portfolio #project-2 {
+  display: none;
+  /*justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+}
+
+#portfolio #project-3 {
+  display: none;
+  /*justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+}
+
+.slider-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.project-holder {
+  
+}
+
+.button-holder {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#portfolio .slider-holder .button-holder button {
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 25px;
+  height: 2vw;
+  width: 2vw;
+  background-color: transparent;
+  margin: 0 .5vw 0 .5vw;
+}
+
+#portfolio .slider-holder .button-holder button:hover {
+  background-color: white;
+}
+
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5vh;
+  width: 50vw;
+  font-size: 1.2vw;
+}
+
+form input {
+  padding-left: 1vw;
+  margin-top: 3vh; 
+  width: 50vw;
+  border-radius: 5px;
+  border: 1px solid	rgb(229, 229, 229);
+  height: 16vh;
+  width: 100%;
+}
+
+form button {
+  margin-top: 6vh; 
+  width: 12vw;
+  height: 18vh;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid	rgb(229, 229, 229);
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+form button:hover {
+  background-color: rgb(178, 178, 178);
+  color: white;
+  border-color: rgb(178, 178, 178);
+}
+
+#comment {
+  margin-top: 3vh; 
+  width: 100%;
+  font-size: 1.2vw;
+  border-radius: 5px;
+  border: 1px solid	rgb(229, 229, 229);
+  height: 12vh;
+  height: 50vh;
+  padding: 1vh 1vw 1vh 1vw;
+}
+
 
 /*rgb(202, 173, 57) rgb(205, 208, 215)
 

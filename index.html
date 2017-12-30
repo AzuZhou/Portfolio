@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title> Azucena Zhou </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
@@ -18,39 +19,67 @@
                     <a href="#portfolio">Portfolio</a>
                 </li>
                 <a href="#bio">
-                    <img src="./art.jpg" alt="Profile">
+                    <img src="./profile.jpg" alt="Profile">
                 </a>
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
             </nav>
         </header>
-        <div id="bio">
 
+        <div id="bio">
             <div class="description">
                 <h1> About Me </h1>
-                <p> My name is Azucena Zhou, you can call me Azu. I am a junior frontender who is currently building up a portfolio.
-                    I am 100% self-taught which is not only more flexible because it helped me manage my time better but
-                    it also allowed me to learn the importance of perseverance and consistecy.</p>
                 <p>
-                    Furthermore, I am one of the co-organizers of freeCodeCamp Buenos Aires, an awesome programming community/meetup which seeks
-                    to ease the transition of new curious minds into this exciting world.
+                    Please call me Azu, unless you are my mom. I am 18 years old and I live in Buenos Aires, Argentina.
+                </p>
+                <p> I am a junior frontend developer (100% self-taught) and I recently recieved my official Front-End Development
+                    Certification from freeCodeCamp. Combining my passion por coding and my perfectionistic nature, I aim
+                    to create functioning yet aesthetically pleasing products.</p>
+                <p>
+                    I am one of the co-organizers of freeCodeCamp Buenos Aires, an awesome programming community/meetup which seeks to ease the
+                    transition of new curious minds into this exciting world, and I am also a volunteer at Chicas en Tecnología
+                    (CET).
                 </p>
             </div>
         </div>
+
         <div id="portfolio">
-            <div class="project-1">
-                <h3>To Do List</h3>
-            </div>
-            <div class="project-2">
+            <div class="slider-holder">
 
-            </div>
-            <div class="project-3">
+                <div class="project-holder">
+                    <div id="project-1">
+                        <h2>Calculator</h2>
+                        <p>This is a simple calculator with a modern design made with HTML, CSS (grid+flex) and JavaScript vanilla.</p>
+                        <a href="https://azuzhou.github.io/Calculator/" target="_blank">
+                            <img src="./calculator.jpg" alt="Calculator">
+                        </a>
+                    </div>
+                    <div id="project-2">
+                        <h2>2</h2>
+                    </div>
+                    <div id="project-3">
+                        <h2>3</h2>
+                    </div>
+                </div>
 
+                <div class="button-holder">
+                    <button id="btn-project-1" href="#project-1"></button>
+                    <button id="btn-project-2" href="#project-2"></button>
+                    <button id="btn-project-3" href="#project-3"></button>
+                </div>
             </div>
         </div>
+
         <div id="contact">
-            <h1> Get in touch with me! </h1>
+            <h1>Get in touch with me!</h1>
+            <form action="mailto:azucena.zhou@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="mail" placeholder="E-mail">
+                <textarea rows="10" cols="50" id="comment" size="140" placeholder="Comment"></textarea>
+                <button id="send" value="send">Send</button>
+            </form>
+            <h2>Follow me on social media ;)</h2>
             <div class="social-media">
                 <a href="https://github.com/AzuZhou" target="_blank">
                     <img src="./github.png" alt="github">
