@@ -9,6 +9,20 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentProjectDisplay;
     let newProjectDisplay;
 
+    let change = function (currentProject, currentProjectDisplay, newProject, newProjectDisplay) {
+        if (currentProjectDisplay == "none") {
+            document.getElementById(currentProject).style.display = "block";
+        } else {
+            document.getElementById(currentProject).style.display = "none";
+        }
+
+        if (newProjectDisplay == "block") {
+            document.getElementById(newProject).style.display = "none"
+        } else {
+            document.getElementById(newProject).style.display = "block"
+        }
+    }
+
     let prevSlide = function () {
 
         for (let elem of projects) {
@@ -24,17 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             newProject = "project-" + newSlide;
             newProjectDisplay = document.getElementById(newProject).style.display;
 
-            if (currentProjectDisplay == "none") {
-                document.getElementById(currentProject).style.display = "block";
-            } else {
-                document.getElementById(currentProject).style.display = "none";
-            }
-
-            if (newProjectDisplay == "block") {
-                document.getElementById(newProject).style.display = "none"
-            } else {
-                document.getElementById(newProject).style.display = "block"
-            }
+            change(currentProject, currentProjectDisplay, newProject, newProjectDisplay);
         }
 
         if (currentSlide > 1) {
@@ -57,18 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
             newProject = "project-" + newSlide;
             newProjectDisplay = document.getElementById(newProject).style.display;
 
-
-            if (currentProjectDisplay == "none") {
-                document.getElementById(currentProject).style.display = "block";
-            } else {
-                document.getElementById(currentProject).style.display = "none";
-            }
-
-            if (newProjectDisplay == "block") {
-                document.getElementById(newProject).style.display = "none"
-            } else {
-                document.getElementById(newProject).style.display = "block"
-            }
+            change(currentProject, currentProjectDisplay, newProject, newProjectDisplay);
         }
 
         if (currentSlide < 3) {
@@ -76,7 +69,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    let button1 = function () {
+        document.getElementById("project-1").style.display = "block";
+        document.getElementById("project-2").style.display = "none";
+        document.getElementById("project-3").style.display = "none";
+    }
+
+    let button2 = function () {
+        document.getElementById("project-1").style.display = "none";
+        document.getElementById("project-2").style.display = "block";
+        document.getElementById("project-3").style.display = "none";
+    }
+
+    let button3 = function () {
+        document.getElementById("project-1").style.display = "none";
+        document.getElementById("project-2").style.display = "none";
+        document.getElementById("project-3").style.display = "block";
+    }
+
+
     document.getElementsByClassName("prev")[0].onclick = prevSlide;
     document.getElementsByClassName("next")[0].onclick = nextSlide;
+    document.getElementById("btn-project-1").onclick = button1;
+    document.getElementById("btn-project-2").onclick = button2;
+    document.getElementById("btn-project-3").onclick = button3;
 
 })
