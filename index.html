@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
     <div class="container">
         <header>
-            <h1>A&#183Z&#183U&#183C&#183E&#183N&#183A&nbsp;&nbsp;Z&#183H&#183O&#183U</h1>
+            <h1>A Z U C E N A &nbsp;&nbsp;Z H O U</h1>
             <nav>
                 <li>
                     <a href="#portfolio">Portfolio</a>
@@ -48,19 +49,24 @@
             <div class="slider-holder">
 
                 <div class="project-holder">
-                    <div id="project-1">
+                    <div id="project-1" style="display: block">
                         <h2>Calculator</h2>
                         <p>This is a simple calculator with a modern design made with HTML, CSS (grid+flex) and JavaScript vanilla.</p>
                         <a href="https://azuzhou.github.io/Calculator/" target="_blank">
                             <img src="./calculator.jpg" alt="Calculator">
                         </a>
                     </div>
-                    <div id="project-2">
+                    <div id="project-2" style="display: none">
                         <h2>2</h2>
                     </div>
-                    <div id="project-3">
+                    <div id="project-3" style="display: none">
                         <h2>3</h2>
                     </div>
+                </div>
+
+                <div id="left-right">
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
                 </div>
 
                 <div class="button-holder">

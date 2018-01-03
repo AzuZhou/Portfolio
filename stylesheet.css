@@ -126,7 +126,7 @@ nav {
 
 nav li a {
   color: rgb(	255, 204, 204);/* rgb(255,192,203);*/
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: bold; 
   text-transform: uppercase;
 }
@@ -134,7 +134,7 @@ nav li a {
 
 nav li {
   display: flex;
-  border: 1px solid	rgb(	178, 178, 178);/*rgb(255,192,203);*/
+  border: 1px dashed	rgb(178, 178, 178);/*rgb(255,192,203);*/
   padding: .5vw .5vh .5vw .5vh;
   width: 12vw;
   height: 5vh;
@@ -218,7 +218,7 @@ header a img {
 }
 
 .description h1 {
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: bold;
   color: rgb(	255, 204, 204); /*rgb(255,192,203);*/
 }
@@ -245,13 +245,14 @@ header a img {
 
 #contact h1 {
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2vw;
   color: rgb(	255, 204, 204);
   padding-top: 10vh;
 }
 
 #contact h2 {
-  font-size: 3vw;
+  font-size: 1.5vw;
+  font-weight: bold;
   color: rgb(	255, 204, 204);
   padding-top: 10vh;
 }
@@ -270,7 +271,6 @@ header a img {
 }
 
 #portfolio #project-1 {
-  display: block;
   /*justify-content: center;
   align-items: center;
   flex-direction: column;*/
@@ -280,13 +280,13 @@ header a img {
 }
 
 #portfolio #project-1 h2 {
-  font-size: 3vw;
+  font-size: 2vw;
   margin-bottom: 5vh;
 }
 
 #portfolio #project-1 p {
- width: 60vw;
- font-size: 1.5vw;
+ width: 50vw;
+ font-size: 1.4vw;
  margin-bottom: 3vh;
 }
 
@@ -296,7 +296,6 @@ header a img {
 }
 
 #portfolio #project-2 {
-  display: none;
   /*justify-content: center;
   align-items: center;
   flex-direction: column;*/
@@ -306,7 +305,6 @@ header a img {
 }
 
 #portfolio #project-3 {
-  display: none;
   /*justify-content: center;
   align-items: center;
   flex-direction: column;*/
@@ -376,7 +374,9 @@ form button {
   border-radius: 20px;
   border: 1px solid	rgb(229, 229, 229);
   font-weight: bold;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  color: rgb(178, 178, 178);
+  font-size: 1.3vw;
 }
 
 form button:hover {
@@ -395,6 +395,22 @@ form button:hover {
   height: 50vh;
   padding: 1vh 1vw 1vh 1vw;
 }
+
+#left-right {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 4.3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95vw;
+}
+
+.prev, .next {
+  cursor: pointer;
+}
+
 
 
 /*rgb(202, 173, 57) rgb(205, 208, 215)
