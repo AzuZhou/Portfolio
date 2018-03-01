@@ -8,99 +8,110 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <script src="main.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
     <div class="container">
         <header>
-            <h1>A Z U C E N A &nbsp;&nbsp;Z H O U</h1>
             <nav>
-                <li>
+                <button>
+                    <a href="#bio">About me</a>
+                </button>
+                <button>
                     <a href="#portfolio">Portfolio</a>
-                </li>
-                <a href="#bio">
-                    <img src="./profile.jpg" alt="Profile">
-                </a>
-                <li>
+                </button>
+                <button>
                     <a href="#contact">Contact</a>
-                </li>
+                </button>
             </nav>
         </header>
 
         <div id="bio">
             <div class="description">
-                <h1> About Me </h1>
+                <h3>AZUCENA ZHOU</h3>
+                <h1>FRONT-END DEVELOPER</h1>
+                <p>"I started coding for fun, and I stuck around for the challenge"</p>
+            </div>
+            <div class="about-me">
                 <p>
-                    Please call me Azu, unless you are my mom. I am 18 years old and I live in Buenos Aires, Argentina.
-                </p>
-                <p> I am a junior frontend developer (100% self-taught) and I recently recieved my official Front-End Development
-                    Certification from freeCodeCamp. Combining my passion por coding and my perfectionistic nature, I aim
-                    to create functioning yet aesthetically pleasing products.</p>
-                <p>
-                    I am one of the co-organizers of freeCodeCamp Buenos Aires, an awesome programming community/meetup which seeks to ease the
-                    transition of new curious minds into this exciting world, and I am also a volunteer at Chicas en Tecnología
-                    (CET).
+                    I co-organize freeCodeCamp Buenos Aires, an awesome
+                    <br>programming community/meetup which seeks to ease the
+                    <br> transition of new curious minds into this exciting world,
+                    <br> and I am also a volunteer at Chicas en Tecnología
                 </p>
             </div>
-        </div>
-
-        <div id="portfolio">
-            <div class="slider-holder">
-
-                <div class="project-holder">
-                    <div id="project-1" style="display: block">
-                        <h2>Calculator</h2>
-                        <p>This is a simple calculator with a modern design made with HTML, CSS (grid+flex) and JavaScript vanilla.</p>
-                        <a href="https://azuzhou.github.io/Calculator/" target="_blank">
-                            <img src="./calculator.jpg" alt="Calculator">
-                        </a>
-                    </div>
-                    <div id="project-2" style="display: none">
-                        <h2>2</h2>
-                    </div>
-                    <div id="project-3" style="display: none">
-                        <h2>3</h2>
-                    </div>
-                </div>
-
-                <div id="left-right">
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
-                </div>
-
-                <div class="button-holder">
-                    <button id="btn-project-1"></button>
-                    <button id="btn-project-2"></button>
-                    <button id="btn-project-3"></button>
+            <div class="technologies">
+                <h3>TECHNOLOGIES</h3>
+                <div class="tech">
+                    <h2>HTML</h2>
+                    <h2>CSS</h2>
+                    <h2>Flexbox</h2>
+                    <h2>Grid</h2>
+                    <h2>JavaScript</h2>
+                    <h2>React</h2>
+                    <h2>Git</h2>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="contact">
-            <h1>Get in touch with me!</h1>
-            <form action="mailto:azucena.zhou@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="mail" placeholder="E-mail">
-                <textarea rows="10" cols="50" id="comment" size="140" placeholder="Comment"></textarea>
-                <button id="send" value="send">Send</button>
-            </form>
-            <h2>Follow me on social media ;)</h2>
-            <div class="social-media">
-                <a href="https://github.com/AzuZhou" target="_blank">
-                    <img src="./github.png" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/azucena-zhou-b34407140/" target="_blank">
-                    <img src="./linkedin.png" alt="linkedin">
-                </a>
-                <a href="https://twitter.com/AzuZhou" target="_blank">
-                    <img src="./twitter.png" alt="twitter">
-                </a>
-                <a href="https://www.instagram.com/azu.zhou/" target="_blank">
-                    <img src="./instagram.png" alt="instagram">
-                </a>
-            </div>
+    <div id="portfolio">
+        <h1>PROJECTS</h1>
+        <div class="project">
+            <a href="https://azuzhou.github.io/Tic-tac-toe/" target="_blank">
+                <h2>&rArr; Tic-Tac-Toe</h2>
+            </a>
+            <p>
+                I decided to try out React and I thought that this was the perfect app to start with. I used the official
+                <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">React tutorial</a>
+                and I got the minimax algorithm from
+                <a href="https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37"
+                    target="_blank">this</a> Medium post.
+                <br>
+                <br> #HTML #CSS #Flexbox #JavaScript #React
+            </p>
         </div>
+        <div class="project">
+            <a href="https://azuzhou.github.io/Pomodoro/" target="_blank">
+                <h2>&rArr; Pomodoro Clock</h2>
+            </a>
+            <p>
+                In this one I added a Random Quote Machine with productivity related quotes to make it a bit more fun. Also, instead of using
+                JQuery I just used JavaScript Vanilla.
+                <br>
+                <br> #HTML #CSS #JavaScript #Flexbox
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+    <div id="contact">
+        <h1>GET IN TOUCH WITH ME!</h1>
+        <form action="mailto:azucena.zhou@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="mail" placeholder="E-mail">
+            <textarea rows="10" cols="50" id="comment" size="140" placeholder="Comment"></textarea>
+            <button id="send" value="send">SEND</button>
+        </form>
+        <h2>FOLLOW ME ON SOCIAL MEDIA</h2>
+        <div class="social-media">
+            <a href="https://github.com/AzuZhou" target="_blank">
+                <img src="./github.png" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/azucena-zhou-b34407140/" target="_blank">
+                <img src="./linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://twitter.com/AzuZhou" target="_blank">
+                <img src="./twitter.png" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/azu.zhou/" target="_blank">
+                <img src="./instagram.png" alt="instagram">
+            </a>
+        </div>
+    </div>
     </div>
 </body>
 
