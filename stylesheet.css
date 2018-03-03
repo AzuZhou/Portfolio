@@ -264,14 +264,14 @@ margin-bottom: 5vh;
   height: 7vh;
 }
 
-.project a {
+.project .link {
   color: rgb(192,192,192);
   font-size: 3vh;
-  transition-duration: 0.2s
+  transition-duration: 0.5s
 }
 
-.project a:hover {
-  font-size: 4vh;
+.project .link:hover {
+  font-size: 3.5vh;
 }
 
 .project p {
@@ -279,6 +279,7 @@ font-size: 2.2vh;
 }
 
 .project p a {
+  color: rgb(192,192,192);
   font-style: italic;
   font-size: 2.5vh;
 }
@@ -344,6 +345,7 @@ form button {
   justify-content: center;
   align-items: center;
   margin-top: 6vh; 
+  padding-top: .5vh;
   width: 12vw;
   height: 8vh;
   background-color: transparent;
